@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+}
+
+header .navbar-brand span {
+    font-size: 36px;
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    z-index: 9999;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar i {
+    font-size: 45px;
+    color: rgb(53 162 44);
+}
+
+.navbar-nav li {
+    margin-right: 1rem;
+}
+
+.navbar-nav li a {
+    font-size: 16px;
+    color: #fff !important;
+}
+
+.navbar-nav li.active a {
+    color: green !important;
+}
+
+.navbar-nav li.active a::after {
+    width: 100% !important;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: green;
+    width: 0;
+    transition: all 0.5s;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+
+}
+
+/*  Carousel */
+
+.carousel-inner .carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-inner .carousel-item:nth-child(1) {
+    background-image: url(/images/finland.jpg);
+}
+
+.carousel-inner .carousel-item:nth-child(2) {
+    background-image: url(/images/mountains-1.jpg);
+}
+
+.carousel-inner .carousel-item:nth-child(3) {
+    background-image: url(/images/mountains.jpg);
+}
+
+.carousel-item .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(39 43 54 / 50%);
+}
+
+.carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.carousel-caption .thumb_img {
+    width: 140px;
+    margin: 0 auto;
+}
+.carousel-caption h3 {
+    font-size: 56px;
+    line-height: 65px;
+}
+.carousel-caption p{
+    font-size: 24px;
+}
+.carousel-caption .thumb_img img {
+    border-radius: 50%;
+}
+
+.carousel-indicators {
+    bottom: 10%;
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.carousel-indicators li.active {
+    background-color: green;
+}
+
+/* Project Section */
+.project {
+    padding-top: 6rem;
+}
+
+.project h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.project .project__title p {
+    padding: 0 180px;
+    color: #757575;
+}
+@media only screen and (max-width: 525px) {
+    .project .project__title p {
+        padding: 0 0 !important;
+    }
+}
+.card {
+    margin-bottom: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 0 5px #9b989850;
+    cursor: pointer;
+    transition: .3s;
+}
+.tab-content {
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-body {
+    border: 1px solid rgb(0 0 0 / 0%);
+    border-radius: 0 0 1.2rem 1.2rem;
+    transition: all .3s;
+}
+
+.card h4.card-title {
+    font-size: 20px;
+    transition: .3s;
+}
+
+.card:hover .card-body {
+    border-bottom: 1px solid #35a22c;
+    border-left: 1px solid #35a22c;
+    border-right: 1px solid #35a22c;
+}
+
+.card:hover .card-body h4.card-title {
+    color: #35a22c;
+}
+
+.project__content .nav-item {
+    margin-right: 10px;
+}
+
+.project__content a {
+    color: #2d303d;
+    border: 1px solid #2d303d !important;
+}
+
+.project__content a.active {
+    background-color: #35a22c !important;
+    border: none !important;
+}
+
+/*  Feature */
+section.feature {
+    background: url(/images/3.jpg);
+    background-size: cover;
+    height: 100% ;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.feature .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b2;
+}
+
+.feature__title {
+    position: relative;
+    padding-top: 110px;
+}
+
+.feature__title h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.feature__title p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 150px;
+}
+.feature-card {
+    padding-bottom: 100px;
+}
+.feature-card .card {
+    margin-top: 35px;
+    padding: 40px 40px;
+    transition: .3s;
+    border-radius: 10px;
+    background: rgb(255 255 255 / 10%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    backdrop-filter: blur(3px);
+    transition: all .5s;
+    cursor: default;
+}
+.feature-card .card-body{
+    border: none !important;
+}
+.feature-card .card:hover {
+    background: black;
+    border: 1px solid white;
+}
+.feature-card .card:hover .card-title{
+    color: white !important;
+}
+.feature-card .card-title {
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.feature-card i {
+    font-size: 48px;
+    color: #35a22c;
+    padding-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .feature-card .card {
+        padding: 20px 20px;
+    }
+}
+@media only screen and (max-width: 525px) {
+    .feature__title p{
+    padding: 0;
+    }
+}
+/* Award Section */
+.award-section {
+    position: relative;
+    padding: 70px 0;
+}
+.award-section .award-bg{
+    background: url(/images/memphis_3.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.award__left{
+    background: rgb(255 255 255 / 25%);
+    border-radius: 10px;
+    border: 1px solid rgb(255 255 255 / 18%);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+    padding: 45px;
+}
+
+.award__left h2{
+    font-size: 36px;
+    line-height: 42px;
+    color: rgb(26 29 45);
+    font-weight: 700;
+}
+.award__left p{
+    color: rgb(88 88 88);
+    line-height: 24px;
+}
+.award__right {
+    padding: 45px 0;
+    color: #585858;
+}
+/* Footer */
+footer {
+    background: rgb(34 34 34);
+}
+.social-icon a {
+    margin-right: 10px;
+    color: rgb(170 170 170);
+    text-decoration: none;
+    background-color: rgb(0 0 0 / 0%);
+}
+.social-icon i {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    border: 1px solid rgb(69 69 69);
+    transition: all .5s;
+}
+.social-icon i:hover {
+    border: 1px solid #35a22c;
+    color: #35a22c;
+}
+.copyright {
+    border-top: 1px solid rgb(69 69 69);
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.copyright a{
+    color: #a6a6a6;
+    text-decoration: none;
+}
+.copyright a:hover {
+    color: #35a22c;
+}
+.copyright p{
+    color: #a6a6a6;
+    font-size: 16px;
+}
