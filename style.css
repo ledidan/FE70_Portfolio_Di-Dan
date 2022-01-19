@@ -63,15 +63,15 @@ header {
 }
 
 .carousel-inner .carousel-item:nth-child(1) {
-    background-image: url(/images/finland.jpg);
+    background-image: url(images/finland.jpg);
 }
 
 .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(/images/mountains-1.jpg);
+    background-image: url(images/mountains-1.jpg);
 }
 
 .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(/images/mountains.jpg);
+    background-image: url(images/mountains.jpg);
 }
 
 .carousel-item .overlay {
@@ -188,7 +188,7 @@ header {
 
 /*  Feature */
 section.feature {
-    background: url(/images/3.jpg);
+    background: url(images/3.jpg);
     background-size: cover;
     height: 100% ;
     background-position: center;
@@ -272,7 +272,7 @@ section.feature {
     padding: 70px 0;
 }
 .award-section .award-bg{
-    background: url(/images/memphis_3.png);
+    background: url(images/memphis_3.png);
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 50% auto;
